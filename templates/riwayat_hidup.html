@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/riwayat_hidup.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'templates/navbar.html' %}
+    <section id="hero">
+        <div class="leftSide">
+            <img src="/static/images/foto.jpg" alt="">
+        </div>
+        <div class="rightSide">
+            <div class="nama">
+                <h2>Vega Dwi Nurani</h2>
+            </div>
+            <div class="job">
+                <h3>Mahasiswa</h3>
+                <div class="hr-line"></div>
+                <!-- ICON -->
+            </div>
+            <div class="subJudul">
+                <h3>TENTANG SAYA</h3>
+            </div>
+            <div class="text">
+                <p>{{ about.about_my_self }}</p>
+            </div>
+        </div>
+    </section>
+    <section id="hero2">
+        <div class="leftSide2">
+            <div class="wrapper_leftSide2">
+                <div class="pendidikan">
+                    <h2>PENDIDIKAN YANG DITEMPUH</h2>
+                </div>
+                <div class="inner_wrapper_leftSide2">
+                    <h3>{{ tahunPendidikanSatu }}</h3>
+                    <p> {{ sekolahPendidikanSatu }} </p>
+                </div>
+                <div class="inner_wrapper_leftSide2">
+                    <h3>{{ tahunPendidikanDua }}</h3>
+                    <p>{{ sekolahPendidikanDua }}</p>
+                </div>
+                <div class="inner_wrapper_leftSide2">
+                    <h3>{{ tahunPendidikanTiga }}</h3>
+                    <p> {{ sekolahPendidikanTiga }} </p>
+                </div>
+                <div class="inner_wrapper_leftSide2">
+                    <h3>{{ tahunPendidikanEmpat }}</h3>
+                    <p> {{ sekolahPendidikanEmpat }} </p>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide2">
+            <div class="wrapper_rightSide2">
+                <div class="pengalaman">
+                    <h2>RIWAYAT PEKERJAAN</h2>
+                </div>
+                <div class="inner_wrapper_rightSide2">
+                    <div class="tahunPekerjaan">
+                        <h3>{{pekerjaanTahunPertama}}</h3>
+                    </div>
+                    <div class="pekerjaan">
+                        <p>{{pekerjaanPertama}}</p>
+                    </div>
+                </div>
+                <div class="inner_wrapper_rightSide2">
+                    <div class="tahunPekerjaan">
+                        <h3>{{pekerjaanTahunKedua}}</h3>
+                    </div>
+                    <div class="pekerjaan">
+                        <p>{{pekerjaanKedua}}</p>
+                    </div>
+                </div>
+                <div class="inner_wrapper_rightSide2">
+                    <div class="tahunPekerjaan">
+                        <h3>{{pekerjaanTahunKetiga}}</h3>
+                    </div>
+                    <div class="pekerjaan">
+                        <p>{{pekerjaanKetiga}}</p>
+                    </div>
+                </div>
+                <div class="inner_wrapper_rightSide2">
+                    <div class="tahunPekerjaan">
+                        <h3>{{pekerjaanTahunKeempat}}</h3>
+                    </div>
+                    <div class="pekerjaan">
+                        <p>{{pekerjaanKeempat}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hero3">
+        <div class="leftSide3">
+            <div class="wrapper_leftSide3">
+                <div class="kontak">
+                    <h2>KONTAK</h2>
+                </div>
+                <div class="inner_wrapper_leftSide3">
+                    <h3>{{noHp}}</h3>
+                    <h3>{{email}}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide3">
+            <div class="wrapper_rightSide3">
+                <div class="prestasi">
+                    <h2>PRESTASI YANG PERNAH DICAPAI</h2>
+                </div>
+                <div class="inner_wrapper_rightSide3">
+                    <p>{{prestasiPertama}}</p>
+                    <p>{{prestasiKedua}}</p>
+                    <p>{{prestasiKetiga}}</p>
+                    <p>{{prestasiKeempat}}</p>
+                    <p>{{prestasiKelima}}</p>
+                    <p>{{prestasiKeenam}}</p>
+                    <p>{{prestasiKetujuh}}</p>
+                    <p>{{prestasiKedelapan}}</p>
+                    <p>{{prestasiKesembilan}}</p>
+                    <p>{{prestasiKesepuluh}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/static/js/script.js"></script>
+</html>

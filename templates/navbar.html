@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="shortcut icon" href="/images/Desain_tanpa_judul__5_-removebg-preview.png" type="image/x-icon">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://kit.fontawesome.com/d995fdf620.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="leftNav">
+            <a href="{% url 'home' %}">
+                <img src="/static/images/Desain_tanpa_judul__5_-removebg-preview.png" alt="">
+            </a>
+            <a href="{% url 'home' %}">Vega</a>
+        </div>
+        <div class="rightNav">
+            <li>
+                <a href="{% url 'home' %}">Beranda</a>
+            </li>
+            <li>
+                <a href="{% url 'kuliah_inti' %}">
+                    Mata Kuliah Inti
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="hiddenElement_1 shadow">
+                    <a href="{% url 'filosofi' %}">Filosofi Pendidikan Indonesia</a>
+                    <a href="{% url 'pemahaman' %}">Pemahaman tentang Peserta Didik dan Pembelajarannya</a>
+                    <a href="{% url 'prinsip_1' %}">Prinsip Pengajaran dan Asesmen yang Efektif I</a>
+                    <a href="{% url 'prinsip_2' %}">Prinsip Pengajaran dan Asesmen yang Efektif II</a>
+                    <a href="{% url 'pembelajaran_sosial' %}">Pembelajaran Sosial Emosional</a>
+                    <a href="{% url 'projek_k_1' %}">Projek Kepemimpinan I</a>
+                    <a href="{% url 'projek_k_2' %}">Projek Kepemimpinan II</a>
+                    <a href="{% url 'ppl_1' %}">PPL I</a>
+                    <a href="{% url 'ppl_2' %}">PPL II</a>
+                </div>
+            </li>
+            <li>
+                <a href="{% url 'kuliah_selektif' %}">
+                    Mata Kuliah Selektif dan Elektif
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="hiddenElement_2 shadow">
+                    <a href="{% url 'design_thinking' %}">Design Thinking</a>
+                    <a href="{% url 'teknologi' %}">Teknologi Baru dalam Pengajaran dan Pembelajaran</a>
+                    <a href="{% url 'computational' %}">Computational Thinking</a>
+                </div>
+            </li>            
+            <li><a href="{% url 'riwayat_hidup' %}">Riwayat Hidup</a></li>
+        </div>
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>      
+        </div>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <li><a href="{% url 'home' %}">Beranda</a></li>
+            <li>
+                <a href="{% url 'kuliah_inti' %}" class="mataKuliah">Mata Kuliah Inti</a>
+                <i class="fa-solid fa-chevron-down" id="chevron"></i>
+                <div class="kuliah_inti_dropdown shadow animate__animated animate__bounceInUp" id="kuliah_inti">
+                    <a href="{% url 'filosofi' %}">Filosofi Pendidikan Indonesia</a>
+                    <a href="{% url 'pemahaman' %}">Pemahaman tentang Peserta Didik <br> dan Pembelajarannya</a>
+                    <a href="{% url 'prinsip_1' %}">Prinsip Pengajaran <br> dan Asesmen yang Efektif I</a>
+                    <a href="{% url 'prinsip_2' %}">Prinsip Pengajaran <br> dan Asesmen yang Efektif II</a>
+                    <a href="{% url 'pembelajaran_sosial' %}">Pembelajaran Sosial Emosional</a>
+                    <a href="{% url 'projek_k_1' %}">Projek Kepemimpinan I</a>
+                    <a href="{% url 'projek_k_2' %}">Projek Kepemimpinan II</a>
+                    <a href="{% url 'ppl_1' %}">PPL I</a>
+                    <a href="{% url 'ppl_2' %}">PPL II</a>
+                </div>
+            </li>    
+            <li>
+                <a href="#" style="font-size: 16px;" class="kuliahSelektif">Mata Kuliah Selektif dan Elektif</a>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="kuliah_selektif_dropdown shadow animate__animated animate__bounceInUp">
+                    <a href="{% url 'design_thinking' %}">Design Thinking</a>
+                    <a href="{% url 'teknologi' %}">Teknologi Baru dalam Pengajaran dan Pembelajaran</a>
+                    <a href="{% url 'computational' %}">Computational Thinking</a>
+                </div>
+            </li>
+            <li><a href="{% url 'riwayat_hidup' %}">Riwayat Hidup</a></li>
+        </div>
+        <div class="header">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <script>        
+        const bars = document.querySelector('.bars')
+        const x = document.querySelector('.header')
+        const dropdown = document.querySelector('.dropdown')
+
+        bars.onclick = function(){
+            dropdown.style.display = "flex";
+            dropdown.classList.add('animate__animated', 'animate__slideInRight');
+        };
+        x.onclick = function(){
+            dropdown.classList.remove('animate__slideInRight');
+            dropdown.classList.add('animate__slideOutRight');
+
+            setTimeout(function() {
+                dropdown.style.display = "none";
+                dropdown.classList.remove('animate__slideOutRight');
+            }, 1000); // Ganti 1000 dengan durasi animasi dalam milidetik (misalnya, 1000ms = 1 detik)
+        };
+    </script>
+</body>
+</html>

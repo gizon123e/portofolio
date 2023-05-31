@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@font-face{
+    font-family: 'Mistrully';
+    src: url('/static/fonts/Mistrully.ttf');
+}
+@font-face{
+    font-family: 'Molok';
+    src: url('/static/fonts/moloko.ttf');
+}
+body{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.rightNav li:nth-child(4){
+    background-color: #f09116;
+}
+.leftNav a:nth-child(2){
+    color: black;
+}
+.rightNav a{
+    color: black;
+}
+section#hero{
+    margin-top: 90px;
+    width: 90%;
+    height: 768px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.leftSide{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 45%;
+}
+.leftSide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightSide{
+    position: absolute;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nama{
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.nama h2{
+    color: #A88357;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 12px;
+}
+.job{
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    display: inline-flex;
+    align-items: center;
+}
+.job h3{
+    font-family: 'Mistrully';
+    font-size: 47px;
+    color: #A88357;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+.hr-line {
+    width: 100%;
+    margin: 15px;
+    border-bottom: 2px solid #A88357;
+    margin-left: 20px;
+}
+.subJudul{
+    position: absolute;
+    top: 30%;
+    width: 90%;
+}
+.subJudul h3{
+    color: #A88357;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    letter-spacing: 8px;
+
+}
+.text{
+    position: absolute;
+    top: 40%;
+    width: 90%;
+}
+.text p{
+    color: #A88357;
+    font-size: 30px;
+    font-family: 'Moloko', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section#hero2{
+    width: 100%;
+    height: 768px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+.leftSide2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightSide2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #A88357;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper_leftSide2, .wrapper_rightSide2{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pendidikan, .pengalaman{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+.pendidikan h2{
+    color: #A88357;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.pengalaman h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.inner_wrapper_leftSide2, .inner_wrapper_rightSide2{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inner_wrapper_leftSide2 h3{
+    color: #A88357;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: bold;
+}
+.inner_wrapper_rightSide2 h3{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: bold;
+}
+.inner_wrapper_leftSide2 p{
+    color: #A88357;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: 400;
+}
+.inner_wrapper_rightSide2 p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20.5px;
+    font-weight: 400;
+}
+section#hero3{
+    width: 100%;
+    height: 768px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+.leftSide3{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A88357;
+}
+.rightSide3{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper_leftSide3, .wrapper_rightSide3{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.kontak{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+.kontak h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30.8px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.inner_wrapper_leftSide3{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.inner_wrapper_leftSide3 h3{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+.inner_wrapper_rightSide3{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.prestasi{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+.prestasi h2{
+    color: #A88357;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23.8px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.inner_wrapper_rightSide3 p{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #A88357;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+@media (max-width: 992px){
+    .bars i{
+        color: black;
+    }
+    section#hero{
+        width: 100%;
+        height: 900px;
+    }
+    .leftSide{
+        width: 100%;
+        height: 50%;
+        left: unset;
+        top: 0;
+    }
+    .rightSide{
+        width: 100%;
+        height: 50%;
+        right: unset;
+        bottom: 0;
+    }
+    .nama{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 5px;
+    }
+    .nama h2{
+        letter-spacing: 5px;
+    }
+    .job{
+        width: 100%;
+        top: 55px;
+        justify-content: center;
+    }
+    .job h3{
+        font-size: 35px;
+    }
+    .subJudul{
+        width: 100%;
+        top: 26%;
+    }
+    .text{
+        width: 100%;
+        bottom: 15px;
+        top: unset;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper_leftSide2{
+        display: flex;
+        width: 100%;
+        text-align: unset;
+    }
+    .pendidikan h2{
+        letter-spacing: 4px;
+        font-size: 18.5px;
+    }
+    .inner_wrapper_leftSide2{
+        align-items: center;
+    }
+    .inner_wrapper_leftSide2 p{
+        text-align: center;
+    }
+    .inner_wrapper_leftSide3{
+        align-items: center;
+    }
+    .inner_wrapper_leftSide3 h3{
+        font-size: 25px;
+    }
+}
+@media (max-width: 600px){
+    .nama h2{
+        letter-spacing: 5px;
+        font-size: 35px;
+    }
+    .job h3{
+        font-size: 35px;
+    }
+    .subJudul h3{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+    section#hero2, section#hero3{
+        height: 900px;
+    }
+    .leftSide2, .rightSide3{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: unset;
+    }
+    .wrapper_leftSide2, .wrapper_rightSide2{
+        position: absolute;
+        top: 10px;
+        height: 100%;
+    }
+    .inner_wrapper_leftSide2, .inner_wrapper_rightSide2{
+        height: 80px;
+    }
+    .inner_wrapper_rightSide2{
+        text-align: center;
+    }
+    .rightSide2, .leftSide3{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        right: unset;
+    }
+    .prestasi{
+        height: 20%;
+    }
+    .prestasi h2{
+        font-size: 20.8px;
+    }
+    .wrapper_rightSide3{
+        height: 95%;
+    }
+    .wrapper_leftSide3{
+        width: 100%;
+    }
+    .inner_wrapper_leftSide3 h3{
+        font-size: 25px;
+    }
+    .inner_wrapper_leftSide3{
+        align-items: center;
+    }
+    .inner_wrapper_rightSide3{
+        width: 100%;
+        height: 80%;
+        top: unset;
+        bottom: 0;
+    }
+}

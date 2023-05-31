@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/artikel.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'templates/navbar.html' %}
+    <section id="hero">
+            <div class="materi">
+                <h1>{{judul_materi|default:""}}</h1>
+            </div>
+            <div class="inner_wrapper">
+                <img src="{{ gambar_1.url }}" alt="">
+                <div class="text">
+                    <p>{{text_materi_1|default:""}}</p>
+                </div>
+            </div>    
+    </section>
+    <section id="hero2">
+        <div class="materi">
+            <h1>
+                {{sub_materi_1|default:""}}
+                <br>
+                {{sub_materi_2|default:""}}
+            </h1>
+        </div>
+        <div class="inner_wrapper">
+            <div class="text">
+                <p>{{text_materi_2|default:""}}</p>
+            </div>
+            <div class="text">
+                <p>{{text_materi_3|default:""}}</p>
+            </div>
+        </div> 
+        <div class="footer">
+            <div class="hr-line"></div>
+            <a href=""><p>Artikel Sebelumnya</p></a>
+            <a href=""><p>Artikel Selanjutnya</p></a>
+        </div>
+    </section>
+    <section id="hero3">
+        <img src="{{ gambar_2.url }}" alt="">
+    </section>
+</body>
+<script src="/static/js/script.js"></script>
+</html>

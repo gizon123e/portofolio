@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/kuliah_inti.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'templates/navbar.html' %}
+    <div class="wrapper_kuliah">
+        <h1>MATA KULIAH INTI</h1>
+        <div class="materi">
+            <div class="part">
+                <li><a href="{% url 'projek_k_1' %}">Projek Kepemimpinan I</a></li>    
+                <li><a href="{% url 'projek_k_2' %}">Projek Kepemimpinan II</a></li>
+                <li><a href="{% url 'pembelajaran_sosial' %}">Pembelajaran Sosial Emosional</a></li>
+            </div>
+            <div class="part">
+                <li><a href="{% url 'prinsip_1' %}">Prinsip Pengajaran dan Asesmen yang Efektif I</a></li>
+                <li><a href="{% url 'prinsip_2' %}">Prinsip Pengajaran dan Asesmen yang Efektif II</a></li>
+                <li><a href="{% url 'pemahaman' %}">Pemahaman tentang Peserta Didik dan Pembelajarannya</a></li>
+            </div>
+            <div class="part">
+                <li><a href="{% url 'ppl_1' %}">PPL 1</a></li>
+                <li><a href="{% url 'ppl_2' %}">PPL 2</a></li>
+                <li><a href="{% url 'filosofi' %}">Filosofi Pendidikan Indonesia</a></li>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/kuliah_selektif_dan_efektif.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'templates/navbar.html' %}
+    <div class="wrapper_kuliah">
+        <h1>MATA KULIAH SELEKTIF</h1>
+        <div class="materi">
+            <div class="part">
+                <li><a href="{% url 'design_thinking' %}">Design Thinking</a></li>
+                <li><a href="{% url 'teknologi' %}">Teknologi Baru dalam Pengajaran dan Pembelajaran</a></li>
+                <li><a href="{% url 'computational' %}">Computational Thinking</a></li>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>

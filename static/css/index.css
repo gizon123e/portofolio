@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Montserrat&family=Poppins:wght@400;700;900&display=swap');
+@font-face{
+    font-family: 'Redcliffe';
+    src: url('/static/fonts/Radcliffe-Regular-trial.ttf');
+}
+@font-face{
+    font-family: 'Aileron';
+    src: url('/static/fonts/aileron.regular.otf');
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #A8947B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.rightNav li:nth-child(1){
+    background-color: #f09116;
+}
+.leftNav a:nth-child(2){
+    color: white;
+}
+.rightNav a{
+    color: white;
+}
+section#hero{
+    width: 95%;
+    height: 87%;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+}
+.leftSide{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90%;
+    position: absolute;
+    top: 20px;
+}
+.heading h1{
+    font-family: 'Explora', cursive;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+}
+.heading h1:nth-child(1){
+    color: white;
+}
+.subHeader{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+.subHeader h3{
+    font-family: 'Explora', cursive;    
+    font-size: 28px;
+    text-align: start;
+    color: white;
+    font-weight: 400;
+}
+.text{
+    width: 470px;
+    height: fit-content;
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+.text p{
+    font-family: 'Explora', cursive;
+    font-size: 18px;
+    text-align: start;
+    color: black;
+    font-weight: 400;
+}
+.icon, .icon_2{
+    width: fit-content;
+    height: fit-content;
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.icon_2{
+    display: none;
+}
+.icon img, .icon_2 img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.rightSide{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+.rightSide img{
+    position: absolute;
+    bottom: 0;
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 992px), (max-width: 1125px){
+    section#hero{
+        width: 90%;
+        display: flex;
+    }
+    .bars i{
+        color: white;
+    }
+    .rightSide{
+        display: none;
+    }
+    body{
+        background: url('/static/images/foto_1.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+    }
+    .leftNav a:nth-child(2) {
+        color: white;
+    }
+    .leftSide{
+        width: 100%;
+        height: fit-content;
+        align-items: unset;
+        position: absolute;
+        bottom:0;
+        left: unset;
+        gap: 30px;
+    }
+    .heading{
+        display: inline-flex;
+        flex-direction: unset;
+        width: 100%;
+        text-align: unset;
+        align-items: flex-start;
+    }
+    .heading h1{
+        font-size: 40px;
+        color: white;
+    }
+    .heading h1:nth-child(2){
+        margin-left: 10px;
+    }
+    .subHeader, .text{
+        width: 50%;
+    }
+    .text p{
+        color: white;
+    }
+    .heading, .subHeader, .text, .icon, .icon_2{
+        position: unset;
+    }
+    .icon{
+        display: none;
+    }
+    .icon_2{
+        display: flex;
+    }
+}
+@media (max-width:600px){
+    .subHeader, .text{
+        width: 100%;
+    }
+    .heading{
+        display: flex;
+        flex-direction: unset;
+    }
+    .heading h1 {
+        font-size: 28px;
+        color: white;
+    }
+    .leftSide{
+        gap: 20px;
+    }
+    .subHeader h3{
+        font-size: 20px;
+    }
+    .icon_2 img{
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (max-width:400px){
+    .heading h1 {
+        font-size: 25px;
+        color: white;
+    }
+}
+@media (max-width:350px){
+    .heading h1 {
+        font-size: 22px;
+        color: white;
+    }
+}
